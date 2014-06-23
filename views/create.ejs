@@ -1,0 +1,71 @@
+<!doctype html>
+<!--[if lt IE 8 ]>
+<html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>
+<html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>
+<html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>iDonate - Регистрация</title>
+
+    <!-- Style CSS -->
+    <link href="/css/bootstrap.css" media="screen" rel="stylesheet">
+    <link href="/css/style.css" media="screen" rel="stylesheet">
+    <link href="/style.css" media="screen" rel="stylesheet">
+
+
+</head>
+
+<body>
+<div class="main">
+    <section class="main-center main-padding">
+
+
+        <div class="add-comment contact-form styled boxed blue-line">
+            <div class="comment-form">
+                <div class="inner">
+                    <h3>Введите пароль</h3>
+
+                    <div class="field_text">
+                        <input type="text" name="name" id="password" placeholder="Пароль">
+                    </div>
+                    <div class="field_text">
+                        <input type="text" name="name" id="confirmPassword" placeholder="Еще разок">
+                        <input type="hidden" name="token" id="token" value="<%- token %>">
+                    </div>
+
+                    <h3>Представьтесь</h3>
+
+                    <div class="field_text">
+                        <p>Пожалуйста, введите ваше имя и фамилию</p>
+                        <input type="text" name="name" id="firstname" placeholder="Например, Иван">
+                    </div>
+                    <div class="field_text">
+                        <input type="text" name="name" id="lastname" placeholder="Например, Иванов">
+                    </div>
+                    <div class="rowSubmit clearfix">
+
+                        <a href="#" class="btn btn-right" id="save"><span>Начать помогать</span></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<!-- main JS libs -->
+<script src="/common-files/js/jquery-1.10.2.min.js"></script>
+<script src="/flat-ui/js/bootstrap.min.js"></script>
+
+<!-- General Scripts -->
+<script src="/js/create.js"></script>
+
+<!--[if lt IE 9]>
+
+</body>
+</html>
